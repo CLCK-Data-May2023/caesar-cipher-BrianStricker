@@ -8,7 +8,7 @@ CHAR_RANGE = 26
 
 def caesar_shift(message, shift):
     # Result placeholder.
-    result = "The encrypted message is: "
+    result = "The encrypted sentence is: "
 
     # Go through each of the letters in the message.
     for char in message.upper():
@@ -29,5 +29,5 @@ def caesar_shift(message, shift):
 
 
 
-user_message = input("Message to Encrypt: ")
+user_message = input("Please enter a sentence: ")
 caesar_shift(user_message, shift)
