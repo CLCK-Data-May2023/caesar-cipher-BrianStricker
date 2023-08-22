@@ -2,16 +2,16 @@
 message = "python is fun!"
 shift = 5
 
-LAST_CHAR_CODE = 90
+LAST_CHAR_CODE = 122
 CHAR_RANGE = 26
 
 
 def caesar_shift(message, shift):
     # Result placeholder.
-    result = "The encrypted message is: "
+    result = "The encrypted sentence is: "
 
     # Go through each of the letters in the message.
-    for char in message.upper():
+    for char in message.lower():
         if char.isalpha():
             # Convert character to the ASCII code.
             char_code = ord(char)
@@ -29,5 +29,5 @@ def caesar_shift(message, shift):
 
 
 
-user_message = input("Message to Encrypt: ")
+user_message = input("Please enter a sentence: ")
 caesar_shift(user_message, shift)
